@@ -14,3 +14,50 @@ let containsDuplicates = s => {
   }
   return false;
 };
+
+let revWord = (str) => {
+  let arr = str.split("");
+  let result = "";
+  for (char of arr){
+    result = char + result;
+  }
+  return result;
+};
+
+let revWords1 = (sentence) => {
+  let arr = sentence.split(" ");
+  let result = "";
+  for (let i = 0; i < arr.length; i++) {
+    let currentWord = arr[i];
+    let reversedWord = revWord(currentWord);
+    result += revWord(currentWord) + " ";
+  }
+  return result;
+};
+
+
+// not sure how to do these next two
+let revWords2 = sentence => {
+  let arr = sentence.split(" ");
+
+  arr.forEach(function
+  });
+  let result = "";
+  for (let i = 0; i < arr.length; i++) {
+    let currentWord = arr[i];
+    let reversedWord = revWord(currentWord);
+    result += revWord(currentWord) + " ";
+  }
+  return result;
+};
+
+  let revWords3 = (sentence) => {
+    let arr = sentence.split(" ");
+    let result = "";
+    for (let i = 0; i < arr.length; i++) {
+      let currentWord = arr[i];
+      let reversedWord = revWord(currentWord);
+      result += revWord(currentWord) + " ";
+    }
+    return result;
+  };
